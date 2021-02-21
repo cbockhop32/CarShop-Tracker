@@ -1,0 +1,164 @@
+.CarForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font: 13px/20px;
+  position: relative;  
+    
+}
+
+
+.container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.Inner-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.2rem;
+  height: 60%;
+}
+
+.Input-Container {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+}
+
+.Input-Container label {
+  color: white;
+  font-size: 1rem;
+  text-shadow: 2px 1px rgba(0,0,0,0.2);
+}
+
+.Input-Container label span {
+  font-size: 0.8rem;
+}
+
+.Input-Container .formInput {
+  border: none;
+  padding: 0.2rem 0.2rem;
+  margin: 0;
+  border-radius: 5px;
+  background-color: var(--secondaryText);
+  color: 	#f9f9f9;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.Input-Container .formInput:focus {
+  outline: none;
+  background-color: var(--mainText);
+}
+
+  /* Button Styling */
+
+
+.Btn.LoadCar {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 32px;
+  width: 300px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--mainText);
+  cursor: pointer;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.2rem 1.5rem;
+  font-weight: bold;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+  background-color: var(--secondaryText) !important;
+  font-weight: bold;
+}
+
+.Blurred {
+  height: 110px;
+  margin: 0.5rem auto;
+  max-width: 800px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 0;
+
+
+}
+
+.Blurred:before {
+  content: '';
+  filter: blur(20px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background: url(../img/header3.jpg) no-repeat fixed 0 0 / cover;
+}
+
+
+.RequiredNote {
+  position: absolute;
+  bottom: 0;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+@media(min-width: 300px) and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+
+  .Blurred {
+    height: auto;
+    margin: 0.6rem auto;
+    padding: 5px;
+    width: 350px;
+  }
+
+  .Inner-container {
+    height: 100%;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Input-Container label {
+    font-size: 0.8rem;
+  }
+
+  .Input-Container .formInput {
+    padding: 0.1rem 0.1rem;
+    width: 125px;
+  }
+
+  .Btn.LoadCar {
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  .RequiredNote {
+    bottom: 2px;
+    font-size: 0.5rem;
+  }
+  
+}

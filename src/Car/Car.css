@@ -1,0 +1,148 @@
+.Car {
+    cursor: pointer;
+    width: 250px;
+    max-width: 250px;
+    height: 200px;
+    min-height: 200px;
+    padding-top: 0.2rem;
+    margin: 0 0.5rem;
+    border: 1px solid var(--secBackground);
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondaryText);
+    transition: transform 0.1s ease-in;
+    overflow: hidden;
+    box-shadow: 2px 7px 15px 5px rgba(0,0,0,0.3) ;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    position: relative;
+    
+}
+
+.Car:hover {
+    transform: scale(1.05);
+  
+}
+
+.Active-Car {
+    border: 5px solid var(--mainText);
+}
+
+.Active-Car .CarLabel {
+    color: var(--mainText);
+}
+
+.deleteCarBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-2px, 2px);
+}
+
+.deleteCarBtn:hover {
+    color:var(--mainText);
+}
+
+.CarImgContainer {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.CarLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarLabel h4 {
+    margin: 0;
+}
+
+.CarLabel p {
+    margin: 0;
+}
+
+.deleteModal {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: var(--mainText);
+    z-index: 100;
+    text-align: center;
+    display: none;
+    color: black;
+}
+
+.deleteModal.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteModal .deleteModal-Btns {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.deleteModal .deleteModal-Btns i:hover {
+    transform: scale(1.10);
+}
+
+.deleteModal .deleteModal-Btns i:active {
+    transform: scale(0.95);
+}
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .Car {
+        width: 138px;
+        max-width: 138px;
+        height: 110px;
+        min-height: 110px;  
+        margin: 0 0.2rem;
+    }
+
+    .CarImgContainer {
+        height: 60px;
+    }
+
+    .CarImgContainer i {
+        transform: scale(0.60);
+    }
+
+    .CarLabel {
+        text-align: center;
+    }
+
+    .CarLabel h4 {
+        font-size: 10px;
+    }
+
+    .CarLabel p {
+        font-size: 10px;
+    }
+    
+    .CarLabel .CarMileage {
+        display: none;
+    }
+
+    .Active-Car {
+        border: 3px solid var(--mainText);
+    }
+
+    .deleteModal p {
+        font-size: 12px;
+    }
+}
+

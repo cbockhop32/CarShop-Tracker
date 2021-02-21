@@ -1,0 +1,367 @@
+.form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.3rem 0;
+    width: 100%;
+
+}
+
+
+/* SingleForm Styles */
+
+.SingleForm {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+
+
+.form .LockedValue {
+    width: 235px;
+    text-align: center;
+    overflow: hidden;
+    color: var(--mainText);
+    
+}
+
+.form p {
+    margin: 0;
+}
+
+
+
+.formInput {
+    border: none;
+    padding: 0.2rem 0.5rem;
+    margin: 0 2rem;
+    border-radius: 5px;
+    background-color: var(--secBackground);
+    color: 	#f9f9f9;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.formInput::placeholder {
+    color:var(--mainText);
+    font-size: 11px;
+}
+
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+
+    .form label, .form p {
+        font-size: 14px;
+    }
+
+   
+    .formInput {
+        margin: 0 0.4rem;
+        padding: 0.2rem 0.3rem;
+
+    }
+
+    .form .LockedValue {
+        width: 177px;
+    }
+
+    .formInput::placeholder {
+        font-size: 10px;
+    }
+
+    .Btn-Save, .Btn-Edit {
+        width: 70px;
+    }
+
+}
+
+
+
+@media (min-width: 1300px) and (max-width: 1850px) {
+    .form {
+        padding: 0.7rem 0;
+       
+        
+    }
+}
+
+
+/* List Form Styles */
+
+
+.ListForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+
+.ListForm h4 {
+    margin: 0 0 0 0.5rem;
+}
+
+
+
+.Btn.Btn-list {
+    width: 35px;
+    height: 28px;
+    border-radius: 10px;
+    margin-left: 0.8rem;
+    
+}
+
+.List {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+   
+}
+
+.ListItem {
+    color: var(--mainText);
+    margin: 0.5rem 0.2rem;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.ListItem i {
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.ListItem i:hover {
+    color:var(--secondaryText);
+}
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .ListForm {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .ListForm .form {
+        width: auto;
+        
+    } 
+
+    .List {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+  
+    }
+
+    .ListItem {
+        margin: 0.2rem 0.1rem;
+        font-size: 12px;
+     
+      
+    }
+
+    .ListItem i {
+       transform: scale(1.15);
+       padding: 0.5rem;
+    }
+
+
+
+}
+
+@media(min-width: 900px) and (max-width: 1300px) {
+    .ListForm .form {
+        padding-left: 3.4rem;
+        width: auto;
+    }
+
+}
+
+
+@media (min-width: 1300px) and (max-width: 1850px) {
+   
+    .ListForm .form {
+        padding-left: 3.4rem;
+        width: auto;
+    }
+
+
+    .List {
+        width: 80%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .form {
+        justify-content: flex-end;
+   
+        
+    }
+    
+}
+
+
+/* ImgForm Styling */
+
+.UploadImgForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+   
+}
+
+.ImgPlaceholder {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+@media(min-width: 300px) and (max-width: 900px) {
+    
+    .ImgPlaceholder {
+        height: 125px;
+        width: 300px;
+        
+    }
+
+    .ImgPlaceholder i {
+       transform: scale(0.80);
+        
+    }
+ 
+}
+ 
+
+
+
+
+
+
+
+
+/* Comment Form Styling */
+
+
+.CommentsForm {
+    position: relative;
+    width: 450px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+}
+
+.CommentsForm.Locked {
+    width: 450px;
+    
+}
+
+
+.LockedComment {
+    width: 450px;
+    color: var(--mainText);
+    border: 1px solid var(--secBackground);
+    height: 113px;
+    border-radius: 5px;
+    height: 111px;
+    font-size: 14px;
+    box-sizing: border-box;
+   overflow-wrap: break-word;
+    overflow-y: auto;
+    
+    
+}
+
+
+
+.CommentsForm h4 {
+    margin: 0 0 0 0.5rem;
+
+}
+
+.CommentsForm textarea {
+    background-color: var(--secBackground);
+    width: 450px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* margin-left: 2rem; */
+    /* margin-top: 0.2rem; */
+    /* padding: 0.2rem; */
+    box-sizing: border-box;
+    
+    
+}
+
+.CommentsForm textarea:focus {
+    outline: none;
+}
+
+
+.Btn-AddComment  {
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+    width: 50px;
+    
+
+}
+
+.Btn-EditComment {
+    position: absolute;
+    width: 50px;
+    bottom: 5px;
+    right: 2px;
+}
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .CommentsForm {
+        width: 325px;
+    }
+
+    .CommentsForm.Locked {
+        width: 325px; 
+    }
+
+
+   .CommentsForm textarea {
+       width: 325px;
+       font-size: 14px;
+       margin-left: 0;
+   
+       box-sizing: border-box;
+   }
+
+   .LockedComment {
+        width: 325px;
+        height: 111px;
+        margin: 0 auto;
+    }
+
+
+    .Btn-AddComment  {
+        right: 8px;
+    }
+
+    .Btn-EditComment { 
+        right: 8px;
+
+    }
+}
+
+

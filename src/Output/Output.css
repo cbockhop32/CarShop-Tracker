@@ -1,0 +1,168 @@
+.Output {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.imgContainer {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:2;
+}
+
+.detailsContainer .CarFormContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.SingleFormContainer {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0.3rem;
+}
+
+.ListFormContainer {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+
+.CarHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.CarHeader h3 {
+    color: var(--mainText);
+    font-size: 1.4rem;
+}
+
+.AddCar {
+    width: 40%;
+    font-weight: bold;
+}
+
+
+.CarAddModal {
+    position: absolute;
+    width: 60%;
+    background-color: var(--mainText);
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+    margin-top: 2rem;
+    transition: 0.5s ease-out opacity;
+    opacity: 0%;
+}
+
+.CarAddModal.Show {
+    opacity: 100%;
+}
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .Output {
+        overflow: auto;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       padding: 0;
+       max-height: 50vh;
+    }
+
+
+    .CarFormContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detailsContainer {
+        padding-top: 1rem;
+    }
+
+    .ListFormContainer {
+        align-items: center;
+        padding: 0;
+    }
+
+    .Btn.AddCar {
+        width: 75%;
+        margin: 1.5rem 0;
+        padding: 1.2rem 0;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .CarAddModal {
+        width: 95%;
+        margin-top: 1rem;
+    }
+
+
+
+  
+}
+
+@media(min-width: 900px) and (max-width: 1300px) {
+    .Output {
+        overflow: auto;
+        max-height: 50vh; 
+    }
+
+    .CarFormContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+
+@media (min-width: 1300px) and (max-width: 1850px)  {
+    .Output {
+        overflow: auto;
+        height:40vh;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: flex-start;
+    }
+
+    .CarFormContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

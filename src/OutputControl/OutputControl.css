@@ -1,0 +1,91 @@
+.OutputControl {
+    width: 65%;
+    background-color: var(--background);
+    opacity: 0.97;
+    color:#fefefe;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 7px -2px 15px 5px rgba(0,0,0,0.77) ; 
+}
+
+
+.OutputControlView {
+    width: 100%;  
+}
+
+.OutputControlSelector {
+    display: flex;
+    padding-top: 0.2rem;
+}
+
+.Btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    width: 100px;
+    border:none;  
+    border-radius: 15px;
+    background-color: var(--mainText);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    outline: none;
+    font-family: 'Poppins', sans-serif;  
+}
+
+.Btn:active {
+    transform: scale(0.95);
+    background:  #d3d1d1 ;
+}
+
+.Btn:hover {
+    background-color: var(--secondaryText);
+}
+
+
+.NavLink {
+    width: 120px;
+    text-align: center;
+    padding: 0.2rem 1.5rem;
+    margin: 0.2rem 0.5rem;
+    text-decoration: none;
+    color: black;
+    background-color: var(--secondaryText);
+    border-radius: 15px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    outline: none;
+}
+
+.ActiveNavLink {
+    
+    font-weight: bold;
+    background-color: var(--mainText);
+   
+
+}
+
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .OutputControl {
+        width: 95%;
+    }
+
+    .NavLink {
+        width: 60px;
+        padding: 0.1rem 0.5rem;
+        margin: 0.1rem 0.2rem;
+      font-size: 10px;
+    }
+}
+
+
+
+@media(min-width: 900px) and (max-width: 1300px) {
+    .OutputControl {
+        width: 95%; 
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --background: #222629;
+  --secBackground: #6B6E70;
+  --scrollBackground: #474B4F;
+  --mainText: #86C232;
+  --secondaryText: #61892F;
+}
+
+
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: url(./img/background2.jpg)  no-repeat fixed left / cover;
+  height: 100vh;
+  
+ 
+}
+
+
+.progress-bar {
+  height: 5px;
+  background: var(--mainText);
+  margin-top: 20px;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+ 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollBackground);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondaryText);
+  border-radius: 15px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainText);
+}
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+   
+  }
+}

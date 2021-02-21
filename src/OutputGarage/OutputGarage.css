@@ -1,0 +1,166 @@
+.OutputGarage {
+    width: 100%;
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.OutputGarage-Inner {
+    width: 95%;
+    margin: 0 auto;  
+}
+
+.OutputGarage-Inner .InnerHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OutputGarage-Inner .InnerHeader h2 {
+    color: var(--mainText);
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.OutputGarage-Inner .InnerHeader .HeaderImg-Container {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OutputGarage-Inner .InnerHeader .HeaderImg-Container img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.OutputGarage-Inner .InnerDetails {
+    width: 75%;
+    margin: 0.8rem auto;
+    padding-top:1rem;
+    border: 2px solid var(--secBackground);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2) ;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.OutputGarage-Inner .Detail-Comments p {
+    color: var(--mainText);
+}
+
+
+.Btn-Link {
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.Detail-Single, .Detail-List, .Detail-Comments {
+    width: 75%;
+    display: flex;
+    justify-content: space-between ;
+    margin: 0 auto;
+}
+
+
+
+.Detail-Single p {
+    margin: 0;
+    color: var(--mainText);
+}
+
+
+.Detail-List,.Detail-Comments  {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.Detail-List ul {
+    margin: 0;
+    list-style-position: inside;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.Detail-List ul li {
+    color: var(--mainText);
+}
+
+
+
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .OutputGarage {
+        max-height: 50vh;
+    }
+
+   
+
+    .OutputGarage-Inner .InnerHeader h2 {
+        font-size: 18px;
+        margin: 0.2rem 0;
+    }
+
+    .OutputGarage-Inner .InnerHeader .HeaderImg-Container {
+        height: 180px;
+    
+    }
+
+
+    .OutputGarage-Inner .InnerDetails {
+        width: 100%;
+        margin: 0.2rem auto;
+        padding-top:0.5rem;
+    }
+
+    .Btn-Link {
+        margin-bottom: 0.5rem;
+    }
+
+
+    .Detail-Single, .Detail-List, .Detail-Comments {
+        width: 90%;
+        margin: 0.2rem auto;
+    }
+
+
+    .Detail-List ul {
+      padding-left: 1rem;
+      text-align: left;
+    }
+
+    .Detail-List ul li {
+        font-size: 14px;
+    }
+
+    .Detail-Comments p  {
+       font-size: 14px;
+       text-align: center;
+    }
+}
+
+
+@media(min-width: 900px) and (max-width: 1300px) {
+    .OutputGarage-Inner {
+        width: 95%;
+    }
+
+   
+    .Detail-Single, .Detail-List, .Detail-Comments {
+        width: 60%;
+       
+    }
+}
+
+
+
+

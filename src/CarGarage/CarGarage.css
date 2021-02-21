@@ -1,0 +1,50 @@
+.CarGarage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;  
+}
+
+.CarGarage-Header {
+    display: flex;
+    align-items: center;
+    border-bottom: var(--secBackground) 1px solid;
+    height: 230px;;
+    width: 90%;
+    overflow-x: auto;
+}
+
+
+.CarGarage-Header.Empty {
+   flex-direction: column;
+   justify-content: center;
+}
+
+.CarGarage-Header.Empty h2 {
+    color: var(--mainText);
+}
+
+
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .CarGarage-Header {
+        height: 120px;
+       
+    }
+
+    .CarGarage-Header.Empty {
+        overflow: hidden;
+    }
+
+
+    .CarGarage-Header.Empty h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .CarGarage-Header.Empty p {
+        font-size: 12px;
+        margin: 0.2rem;
+    }
+}
