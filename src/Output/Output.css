@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 1rem;
     position: relative;
     text-align: center;
@@ -62,6 +62,7 @@
 .CarHeader h3 {
     color: var(--mainText);
     font-size: 1.4rem;
+    margin-top: 0;
 }
 
 .AddCar {

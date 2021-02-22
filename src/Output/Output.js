@@ -173,9 +173,6 @@ import uuid from "uuid/dist/v4";
                 </div>
 
                 <div className="detailsContainer">
-
-                   
-
                     <div className="CarFormContainer">
                         <div className="SingleFormContainer">
                             <SingleForm name="price" value={this.state.price} addSingleForm={this.addSingleForm}/>
@@ -189,8 +186,6 @@ import uuid from "uuid/dist/v4";
                             <ListForm name="options" items={this.state.options} addListForm={this.addListForm} deleteListFormItem={this.deleteListFormItem} />
                             <CommentsForm value={this.state.comments} addCommentsForm={this.addCommentsForm}/>
                         </div>
-                        
-                        
                     </div>
 
                     <button className="Btn AddCar" onClick={() => {this.handleAdd(); this.handleShowAddMsg();}}>Add Car To Garage</button>
