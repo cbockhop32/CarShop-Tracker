@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Welcome to Car Shopping Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This tool is designed to help you keep track of all the potential cars you want to look at while you are nearing a car purchase.
+This tool is more focused on the shopping phase of when you have already figured out which make and model you want to buy but you are now searching for actual car listings and trying to keep track of small differences in options, trim level, mileage, etc. of actual listings in your area.
 
-## Available Scripts
+## How to Use
 
-In the project directory, you can run:
+1) Start by entering the year, make, and model of the desired car you want to add to your garage. Adding trim level is optional.
 
-### `npm start`
+2) Click 'Add Car' to add it to your Search Results and to begin adding additional details to this car.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3) Upload an image of the car. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4) Fill out the remaining fields for price, mileage, location, listing (save the online listing URL), options, and any additional comments as you see fit.
 
-### `npm test`
+5) Once all the additional details have been filled out, click 'Add Car To Garage' to save this car to 'My Garage'.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6) To view cars you have saved, click 'My Garage' and click on specific cars to display all the additonal details that you saved.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Other Comments
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Prior to adding a car to 'My Garage', any of the fields are editable 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- The listing field is meant for a URL to the actual car listing. This will be used as a link once the car is added to 'My Garage'
 
-### `npm run eject`
+- To delete a car from 'My Garage', click the top-right corner of any car icon that is listed in 'My Garage'
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Once a car is saved to 'My Garage', any details cannot be changed. You will have to delete that specific car and add it back in with any updates.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

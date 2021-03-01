@@ -5,11 +5,7 @@ import searchSplash from '../img/searchSplash.jpg'
 
 
 class SearchResults extends Component {
-    // constructor(props) {
-    //     super(props)
-
-    // }
-
+  
     render() {
         let result;
         
@@ -24,7 +20,7 @@ class SearchResults extends Component {
                     </div>
 
                     <div>
-                        <h2>Welcome to /CarSearch/</h2>
+                        <h2>Welcome to Car Shopping Tracker</h2>
                         <p>Your 'day-of' car buying tool designed to help you keep track of all your potential options</p>
                         
                     </div>
